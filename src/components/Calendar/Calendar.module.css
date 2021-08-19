@@ -1,0 +1,39 @@
+.calendar {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px #ddd;
+    width: 100vw;
+    height: 100vh;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background: radial-gradient(
+      circle at 50% 0,
+      rgba(255, 0, 0, 0.5),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    radial-gradient(
+      circle at 6.7% 75%,
+      rgba(0, 0, 255, 0.5),
+      rgba(0, 0, 255, 0) 70.71%
+    ),
+    radial-gradient(
+        circle at 93.3% 75%,
+        rgba(0, 255, 0, 0.5),
+        rgba(0, 255, 0, 0) 70.71%
+      )
+  }
+
+
+  @media screen and (min-height: 1020px)  and (max-height: 1299px)  {
+    .calendar {
+      height: 90vh;
+    }
+  }
+  
+  @media screen and (min-height: 1300px) {
+    .calendar {
+      height: 70vh;
+    }
+  }
+  

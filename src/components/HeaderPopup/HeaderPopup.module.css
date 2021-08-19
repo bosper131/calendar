@@ -1,0 +1,20 @@
+.headerInfo {
+  flex: 1;
+  font-size: 1.5em;
+}
+
+.headerMonth {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 326px) {
+  .headerInfo {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 326px) and (min-width: 280px) {
+  .headerInfo {
+    font-size: 1.2em;
+  }
+}

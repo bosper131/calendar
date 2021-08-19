@@ -1,0 +1,22 @@
+.weekrow {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background: #ffffff3b;
+    margin: 10px 0 1px;
+    border-radius: 5px;
+  }
+  
+  .weekday {
+    height: 35px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-height: 1000px)  {
+    .weekday {
+      font-size: x-large;
+    }
+  }
+  

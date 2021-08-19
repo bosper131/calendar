@@ -1,0 +1,66 @@
+.monthSelector {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: radial-gradient(
+        circle at 50% 0,
+        rgba(255, 0, 0, 0.5),
+        rgba(255, 0, 0, 0) 70.71%
+      ),
+      radial-gradient(
+        circle at 6.7% 75%,
+        rgba(0, 0, 255, 0.5),
+        rgba(0, 0, 255, 0) 70.71%
+      ),
+      radial-gradient(
+          circle at 93.3% 75%,
+          rgba(0, 255, 0, 0.5),
+          rgba(0, 255, 0, 0) 70.71%
+        )
+        beige;
+    border-radius: 10px;
+    display: grid;
+    /* grid-template-areas: "1 2 3" "4 5 6" "7 8 9" "10 11 12"; */
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .selectableMonth {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 2px;
+    background-clip: content-box;
+  }
+  
+  .selectableMonth:hover {
+    background: linear-gradient(
+        45deg,
+        rgba(176, 245, 170, 0.322),
+        #00ffc365
+      );
+    background-clip: content-box;
+  }
+
+  .selectedMonth {
+    background: linear-gradient(135deg, #00ff80ab, #ffc0c0bd);
+    background-clip: content-box;
+  }
+  
+  .monthSelector span:nth-child(1) {
+    border-top-left-radius: 10px;
+  }
+  
+  .monthSelector span:nth-child(3) {
+    border-top-right-radius: 10px;
+  }
+  
+  .monthSelector span:nth-child(10) {
+    border-bottom-left-radius: 10px;
+  }
+  
+  .monthSelector span:nth-child(12) {
+    border-bottom-right-radius: 10px;
+  }
